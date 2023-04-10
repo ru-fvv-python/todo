@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content%}
+<h1>Главная страница</h1>
+<p> Добро пожаловать в <еm>Мир задач</еm>, Это очень простой
+веб-сайт, написанный на Django. Разработан на Python
+в качестве учебного примера с использованием PyCharrn.</p>
+
+<h2>Динамический контент</h2>
+<p>База данных сайта содержит следующее количество записей:</p>
+<ul>
+  <li><strong>Всего задач: </strong>{{num_tasks}}</li>
+  <li><strong>Завершенных задач: </strong>{{num_tasks_completeness}}</li>
+  <li><strong>Открытых задач: </strong>{{num_tasks_opened}}</li>
+</ul>
+{% endblock %}
