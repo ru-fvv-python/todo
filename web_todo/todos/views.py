@@ -1,10 +1,13 @@
-from django.http import HttpResponse
-
-
 # Create your views here.
 from django.shortcuts import render
+from django.views import generic
 
 from .models import Task
+
+
+class TaskListView(generic.ListView):
+    """Обобщенный класс для вывода списка задач"""
+    model = Task
 
 
 def index(request):
