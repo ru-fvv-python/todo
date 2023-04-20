@@ -10,6 +10,11 @@ class TaskListView(generic.ListView):
     model = Task
 
 
+class TaskDetailView(generic.DetailView):
+    """Класс для вывода определенной задачи"""
+    model = Task
+
+
 def index(request):
     """Генерация количеств типов задач"""
     # всего задач
