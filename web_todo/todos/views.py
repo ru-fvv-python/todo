@@ -8,6 +8,7 @@ from .models import Task
 class TaskListView(generic.ListView):
     """Обобщенный класс для вывода списка задач"""
     model = Task
+    paginate_by = 3
 
 
 class TaskDetailView(generic.DetailView):
