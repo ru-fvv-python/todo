@@ -1,17 +1,18 @@
-{% extends 'base_generic.html' %}
+{% extends "base_generic.html" %}
 
-{%block content%}
+{% block content %}
   <h1>Список задач в БД</h1>
-  {% if task_list%}
-    <ul>
-      {% for task in task_list%}
-        <li>
-          <a href="{{ task.get_absolute_url }}">{{ task.name }}</a>
-          ({{ task.category}})
-        </li>
-      {% endfor %}
-    </ul>
+  {% if task_list %}
+  <ul>
+    {% for task in task_list %}
+    <li>
+      <a href="{{ task.get_absolute_url }}">
+        {{ task.name }}</a>
+      ({{task.category}})
+    </li>
+    {% endfor %}
+  </ul>
   {% else %}
     <p>Задач в БД нет</p>
-  {%endif%}
+  {% endif %}
 {% endblock %}

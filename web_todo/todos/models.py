@@ -1,7 +1,7 @@
 from django.db import models
 
-
 # Create your models here.
+from django.urls import reverse
 
 
 class Importance(models.Model):
@@ -28,6 +28,10 @@ class Category(models.Model):
 
 class Task(models.Model):
     """Задача"""
+    COMPLETENESS = [
+        (False,  "не завершена"),
+        (True,  "завершена"),
+    ]
     name = models.CharField(max_length=100,
                             help_text='Введите название задачи',
                             verbose_name='Задача')
@@ -41,10 +45,15 @@ class Task(models.Model):
     importance = models.ForeignKey('Importance', on_delete=models.CASCADE,
                                    help_text='выберите важность задачи',
                                    verbose_name='Важность')
-    completeness = models.BooleanField(default=False,
+    completeness = models.BooleanField(default=False, choices=COMPLETENESS,
                                        help_text='Задача завершена?',
                                        verbose_name='Статус выполнения')
 
     def __str__(self):
         """Возваращает задачу"""
         return '%s %s' % (self.name, self.completeness)
+
+    def get_absolute_url(self):
+        """Возвращает полный URL-адрес для каждой конкретной записи
+        (ассоциированной с текущим объектом)"""
+        return reverse('task-detail', kwargs={'pk': self.pk})
