@@ -15,8 +15,7 @@ Including another URLconf
 """
 from todos import views
 from django.contrib import admin
-from django.urls import path, re_path
-
+from django.urls import path, re_path, include
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -25,4 +24,9 @@ urlpatterns = [
     re_path(r'^task/(?P<pk>\d+)$', views.TaskDetailView.as_view(),
             name='task-detail'),
 
+]
+
+# Добавление URL-адреса для входа в систему
+urlpatterns += [
+    path('accounts/', include('django.contrib.auth.urls')),
 ]

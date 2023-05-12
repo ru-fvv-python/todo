@@ -27,8 +27,13 @@ def index(request):
     # количество не завершенных задач
     num_tasks_opened = Task.objects.filter(completeness=0).count()
 
+    # количество посещений этого представления, посчитанное в переменной session
+    num_visits = request.session.get('num_visits', 0)
+    request.session['num_visits'] = num_visits + 1
+
     return render(request, 'index.html',
                   context={'num_tasks': num_tasks,
                            'num_tasks_completeness': num_tasks_completeness,
-                           'num_tasks_opened': num_tasks_opened},
+                           'num_tasks_opened': num_tasks_opened,
+                           'num_visits': num_visits},
                   )
