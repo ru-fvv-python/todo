@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1c9a11a-cad2-4b27-8a8f-a195adafd136" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web_todo/todos/templates/registration/password_reset_complete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_todo/todos/templates/registration/password_reset_confirm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_todo/todos/templates/registration/password_reset_done.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_todo/todos/templates/registration/password_reset_email.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web_todo/todos/templates/registration/password_reset_form.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_todo/todos/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_todo/todos/templates/registration/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_todo/web_todo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_todo/web_todo/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web_todo/todos/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_todo/todos/templates/base_generic.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,38 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="password_reset_email.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/registration/password_reset_email.html">
+      <file leaf-file-name="base_generic.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/base_generic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="password_reset_confirm.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/registration/password_reset_confirm.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-176">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="password_reset_complete.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/registration/password_reset_complete.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web_todo/web_todo/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
+            <state relative-caret-position="447">
+              <caret line="41" column="65" lean-forward="true" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -87,7 +55,6 @@
         <option value="$PROJECT_DIR$/web_todo/todos/templates/todos/task_list.html" />
         <option value="$PROJECT_DIR$/web_todo/todos/models.py" />
         <option value="$PROJECT_DIR$/web_todo/todos/templates/todos/task_detail.html" />
-        <option value="$PROJECT_DIR$/web_todo/todos/templates/base_generic.html" />
         <option value="$PROJECT_DIR$/web_todo/todos/views.py" />
         <option value="$PROJECT_DIR$/web_todo/todos/templates/index.html" />
         <option value="$PROJECT_DIR$/web_todo/web_todo/urls.py" />
@@ -99,6 +66,7 @@
         <option value="$PROJECT_DIR$/web_todo/todos/templates/registration/password_reset_confirm.html" />
         <option value="$PROJECT_DIR$/web_todo/todos/templates/registration/password_reset_complete.html" />
         <option value="$PROJECT_DIR$/web_todo/web_todo/settings.py" />
+        <option value="$PROJECT_DIR$/web_todo/todos/templates/base_generic.html" />
       </list>
     </option>
   </component>
@@ -164,6 +132,19 @@
               <item name="ToDo" type="462c0819:PsiDirectoryNode" />
               <item name="web_todo" type="462c0819:PsiDirectoryNode" />
               <item name="todos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ToDo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ToDo" type="462c0819:PsiDirectoryNode" />
+              <item name="web_todo" type="462c0819:PsiDirectoryNode" />
+              <item name="todos" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ToDo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ToDo" type="462c0819:PsiDirectoryNode" />
+              <item name="web_todo" type="462c0819:PsiDirectoryNode" />
+              <item name="web_todo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -281,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683893328717</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="добавлен функционал для сброса пароля.">
+      <created>1684145157192</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684145157192</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -294,7 +282,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="27" width="960" height="1053" extended-state="4" />
+    <frame x="888" y="27" width="1032" height="1053" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.58862144" weight="0.32968238" />
       <window_info anchor="right" id="aiXcoder" order="3" />
@@ -303,8 +292,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.36144578" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32968238" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3603505" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.3884026" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2595838" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.39553753" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -362,7 +351,8 @@
     <MESSAGE value="Создана страница-html для  отображения конкретной задачи." />
     <MESSAGE value="Добавлена пагинация страниц" />
     <MESSAGE value="добавлен подсчет количества посщений главной страницы сайта. Создана страница для входа в систему и выхода." />
-    <option name="LAST_COMMIT_MESSAGE" value="добавлен подсчет количества посщений главной страницы сайта. Создана страница для входа в систему и выхода." />
+    <MESSAGE value="добавлен функционал для сброса пароля." />
+    <option name="LAST_COMMIT_MESSAGE" value="добавлен функционал для сброса пароля." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -648,13 +638,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/base_generic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1012">
-          <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web_todo/todos/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
@@ -711,24 +694,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/registration/password_reset_confirm.html">
+    <entry file="file://$PROJECT_DIR$/web_todo/web_todo/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-176">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="495">
+          <caret line="107" selection-start-line="107" selection-end-line="107" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/registration/password_reset_complete.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_todo/web_todo/settings.py">
+    <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/registration/password_reset_confirm.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
+        <state relative-caret-position="22">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/base_generic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="41" column="65" lean-forward="true" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
         </state>
       </provider>
     </entry>
