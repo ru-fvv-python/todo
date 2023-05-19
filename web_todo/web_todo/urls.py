@@ -13,9 +13,9 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from todos import views
 from django.contrib import admin
 from django.urls import path, re_path, include
+from todos import views
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -29,4 +29,8 @@ urlpatterns = [
 # Добавление URL-адреса для входа в систему
 urlpatterns += [
     path('accounts/', include('django.contrib.auth.urls')),
+]
+
+urlpatterns += [
+    re_path(r'^mytasks/$', views.TasksByUserListView.as_view(), name='my-tasks')
 ]

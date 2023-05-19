@@ -1,0 +1,17 @@
+{% extends 'base_generic.html' %}
+{% block content %}
+  <h1>Мои задачи</h1>
+  {% if task_list %}
+    <ul>
+      {% for my_task in task_list %}
+        <li class="{% if my_task.is_overdue %} text-danger {% endif %}">
+          <a href="{{ my_task.get_absolute_url }}">
+            {{my_task.name}}</a>
+          ({{my_task.date_to}})
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Нет задач.</p>
+  {% endif %}
+{% endblock %}

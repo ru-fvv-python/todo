@@ -1,4 +1,5 @@
 # Create your views here.
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render
 from django.views import generic
 
@@ -37,3 +38,14 @@ def index(request):
                            'num_tasks_opened': num_tasks_opened,
                            'num_visits': num_visits},
                   )
+
+
+class TasksByUserListView(LoginRequiredMixin, generic.ListView):
+    """Универсальный класс представления списка задач конкретного пользователя"""
+
+    model = Task
+    template_name = 'todos/task_list_owner_user.html'
+    paginate_by = 10
+
+    def get_queryset(self):
+        return Task.objects.filter(owner=self.request.user).order_by('date_to')

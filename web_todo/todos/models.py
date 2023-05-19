@@ -1,7 +1,11 @@
+from datetime import date
+
+from django.contrib.auth.models import User
 from django.db import models
+from django.urls import reverse
+
 
 # Create your models here.
-from django.urls import reverse
 
 
 class Importance(models.Model):
@@ -29,8 +33,8 @@ class Category(models.Model):
 class Task(models.Model):
     """Задача"""
     COMPLETENESS = [
-        (False,  "не завершена"),
-        (True,  "завершена"),
+        (False, "не завершена"),
+        (True, "завершена"),
     ]
     name = models.CharField(max_length=100,
                             help_text='Введите название задачи',
@@ -48,6 +52,9 @@ class Task(models.Model):
     completeness = models.BooleanField(default=False, choices=COMPLETENESS,
                                        help_text='Задача завершена?',
                                        verbose_name='Статус выполнения')
+    owner = models.ForeignKey(User, on_delete=models.CASCADE, null=True,
+                              blank=True, verbose_name='Владелец',
+                              help_text='текущий пользователь')
 
     def __str__(self):
         """Возваращает задачу"""
@@ -57,3 +64,11 @@ class Task(models.Model):
         """Возвращает полный URL-адрес для каждой конкретной записи
         (ассоциированной с текущим объектом)"""
         return reverse('task-detail', kwargs={'pk': self.pk})
+
+    @property
+    def is_overdue(self):
+        """Проверяет просрочку задачи"""
+        if self.date_to and date.today() > self.date_to \
+                and self.completeness == False:
+            return True
+        return False

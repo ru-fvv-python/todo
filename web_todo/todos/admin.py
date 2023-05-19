@@ -14,16 +14,16 @@ class TaskAdmin(admin.ModelAdmin):
     # очередность полей в списке
     list_display = (
         'category', 'importance', 'completeness', 'name', 'date_from',
-        'date_to')
+        'date_to', 'owner')
     # фильтры
-    list_filter = ('category', 'importance', 'completeness')
+    list_filter = ('category', 'importance', 'completeness', 'owner')
     # секции с полями
     fieldsets = (
         ('Задача', {
             'fields': ('name', 'category', 'importance')
         }),
         ('Статус и сроки', {
-            'fields': ('completeness', ('date_from', 'date_to'))
+            'fields': ('completeness', ('date_from', 'date_to'), 'owner')
         })
     )
 
