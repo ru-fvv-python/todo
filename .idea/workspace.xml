@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d1c9a11a-cad2-4b27-8a8f-a195adafd136" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/web_todo/todos/templates/todos/task_list_owner_user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_todo/todos/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_todo/todos/templates/todos/categories_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web_todo/todos/templates/todos/category_edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_todo/todos/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_todo/todos/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web_todo/todos/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_todo/todos/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_todo/todos/templates/base_generic.html" beforeDir="false" afterPath="$PROJECT_DIR$/web_todo/todos/templates/base_generic.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_todo/todos/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_todo/todos/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web_todo/web_todo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/web_todo/web_todo/urls.py" afterDir="false" />
@@ -22,31 +22,28 @@
       <file leaf-file-name="base_generic.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/base_generic.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-520">
-              <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
+            <state>
+              <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task_detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/todos/task_detail.html">
+      <file leaf-file-name="categories_add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/todos/categories_add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state>
+              <caret selection-end-line="42" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_todo/todos/models.py">
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_todo/web_todo/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1606">
-              <caret line="73" column="20" lean-forward="true" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+            <state relative-caret-position="407">
+              <caret line="25" column="76" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
               <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#632#664#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,8 +52,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web_todo/todos/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="968">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
+            <state relative-caret-position="297">
+              <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
               <folding>
                 <element signature="e#26#83#0" expanded="true" />
               </folding>
@@ -64,32 +61,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task_list_owner_user.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/todos/task_list_owner_user.html">
+      <file leaf-file-name="category_edit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/todos/category_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="220">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/todos/task_list.html">
+      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web_todo/todos/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="39" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web_todo/web_todo/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
-              <folding>
-                <element signature="e#632#664#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -100,6 +85,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="Python Script" />
         <option value="HTML File" />
       </list>
     </option>
@@ -134,10 +120,13 @@
         <option value="$PROJECT_DIR$/web_todo/todos/templates/registration/password_reset_complete.html" />
         <option value="$PROJECT_DIR$/web_todo/web_todo/settings.py" />
         <option value="$PROJECT_DIR$/web_todo/todos/admin.py" />
-        <option value="$PROJECT_DIR$/web_todo/web_todo/urls.py" />
         <option value="$PROJECT_DIR$/web_todo/todos/templates/todos/task_list_owner_user.html" />
-        <option value="$PROJECT_DIR$/web_todo/todos/templates/base_generic.html" />
         <option value="$PROJECT_DIR$/web_todo/todos/models.py" />
+        <option value="$PROJECT_DIR$/web_todo/todos/forms.py" />
+        <option value="$PROJECT_DIR$/web_todo/todos/templates/base_generic.html" />
+        <option value="$PROJECT_DIR$/web_todo/todos/templates/todos/categories_add.html" />
+        <option value="$PROJECT_DIR$/web_todo/todos/templates/todos/category_edit.html" />
+        <option value="$PROJECT_DIR$/web_todo/web_todo/urls.py" />
         <option value="$PROJECT_DIR$/web_todo/todos/views.py" />
       </list>
     </option>
@@ -151,10 +140,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="929" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="x" value="939" />
     <option name="y" value="27" />
-    <option name="width" value="991" />
+    <option name="width" value="981" />
     <option name="height" value="1053" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -356,7 +345,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684159327746</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Создана форма для вывода задач конкретного пользователя. Теперь в &#10;админке можно присваивать пользователя-владельца задаче.">
+      <created>1684486065405</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1684486065405</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView">
@@ -369,7 +365,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <frame x="939" y="27" width="981" height="1053" extended-state="4" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.58862144" weight="0.32968238" />
       <window_info anchor="right" id="aiXcoder" order="3" />
@@ -378,8 +375,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.36144578" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32968238" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2595838" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16115262" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.2595838" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3090909" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
@@ -439,11 +436,12 @@
     <MESSAGE value="добавлен подсчет количества посщений главной страницы сайта. Создана страница для входа в систему и выхода." />
     <MESSAGE value="добавлен функционал для сброса пароля." />
     <MESSAGE value="Поверка подлинности входа пользователя в систему" />
-    <option name="LAST_COMMIT_MESSAGE" value="Поверка подлинности входа пользователя в систему" />
+    <MESSAGE value="Создана форма для вывода задач конкретного пользователя. Теперь в &#10;админке можно присваивать пользователя-владельца задаче." />
+    <option name="LAST_COMMIT_MESSAGE" value="Создана форма для вывода задач конкретного пользователя. Теперь в &#10;админке можно присваивать пользователя-владельца задаче." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JavascriptDebugType">
@@ -464,27 +462,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web_todo/web_todo/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_todo/todos/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="40" column="14" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_todo/todos/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="902">
-          <caret line="43" column="25" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web_todo/web_todo/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2486">
@@ -680,24 +657,10 @@
     <entry file="file://$PROJECT_DIR$/web_todo/todos/migrations/0002_alter_task_completeness.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/registration/logged_out.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="71" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/registration/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -764,10 +727,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/todos/task_list.html">
+    <entry file="file://$PROJECT_DIR$/web_todo/todos/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="39" />
+        <state relative-caret-position="1279">
+          <caret line="73" column="20" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -778,37 +744,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/todos/task_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="39" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/todos/task_detail.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/base_generic.html">
+    <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-520">
-          <caret line="39" column="55" selection-start-line="39" selection-start-column="55" selection-end-line="39" selection-end-column="55" />
+        <state relative-caret-position="330">
+          <caret line="15" column="55" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web_todo/todos/models.py">
+    <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/registration/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1606">
-          <caret line="73" column="20" lean-forward="true" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="748">
+          <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_todo/todos/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/base_generic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/todos/categories_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="42" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_todo/todos/templates/todos/category_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web_todo/web_todo/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
+        <state relative-caret-position="407">
+          <caret line="25" column="76" selection-start-line="25" selection-start-column="76" selection-end-line="25" selection-end-column="76" />
           <folding>
             <element signature="e#632#664#0" expanded="true" />
           </folding>
@@ -817,8 +815,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web_todo/todos/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="968">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        <state relative-caret-position="297">
+          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
           <folding>
             <element signature="e#26#83#0" expanded="true" />
           </folding>

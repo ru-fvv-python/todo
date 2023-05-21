@@ -1,0 +1,43 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+  <h3>Список категорий</h3>
+
+  <table>
+
+    <thead>
+      <th>Id--</th>
+      <th>Название категории</th>
+    </thead>
+
+    {% if category %}
+
+      {% for category in category.all %}
+        <tr>
+          <td>{{ category.id }}</td>
+          <td>{{ category.name }}</td>
+          <td><a href="/edit-category/{{ category.id }}">Изменить</a> ,
+            <a href="/delete-category/{{ category.id }}">Удалить</a></td>
+        </tr>
+      {% endfor %}
+
+    {% else %}
+      <p>В базе данных нет категорий</p>
+    {% endif %}
+
+  </table>
+
+  <br>
+
+  <h3>Добавить категорию в БД</h3>
+  <form action="/create-category/" method="post">
+
+    {%csrf_token%}
+
+    <table>
+      {{form}}
+    </table>
+    <input class="btn btn-primary" type="submit" value="Сохранить">
+  </form>
+
+{% endblock %}

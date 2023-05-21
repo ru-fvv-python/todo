@@ -19,6 +19,11 @@ from todos import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('categories-add/', views.categories_add, name='categories-add'),
+    path('create-category/', views.create_category, name='create-category'),
+    path('delete-category/<int:id>/', views.delete_category,
+         name='delete-category'),
+    path('edit-category/<int:id>/', views.edit_category, name='edit-category'),
     path('admin/', admin.site.urls),
     re_path(r'^tasks/$', views.TaskListView.as_view(), name='tasks'),
     re_path(r'^task/(?P<pk>\d+)$', views.TaskDetailView.as_view(),
@@ -32,5 +37,6 @@ urlpatterns += [
 ]
 
 urlpatterns += [
-    re_path(r'^mytasks/$', views.TasksByUserListView.as_view(), name='my-tasks')
+    re_path(r'^mytasks/$', views.TasksByUserListView.as_view(),
+            name='my-tasks')
 ]

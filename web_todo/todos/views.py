@@ -1,9 +1,11 @@
 # Create your views here.
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.http import HttpResponseRedirect, HttpResponseNotFound
 from django.shortcuts import render
 from django.views import generic
 
-from .models import Task
+from .forms import CategoriesForm
+from .models import Task, Category
 
 
 class TaskListView(generic.ListView):
@@ -41,7 +43,8 @@ def index(request):
 
 
 class TasksByUserListView(LoginRequiredMixin, generic.ListView):
-    """Универсальный класс представления списка задач конкретного пользователя"""
+    """Универсальный класс представления списка задач
+    конкретного пользователя"""
 
     model = Task
     template_name = 'todos/task_list_owner_user.html'
@@ -49,3 +52,43 @@ class TasksByUserListView(LoginRequiredMixin, generic.ListView):
 
     def get_queryset(self):
         return Task.objects.filter(owner=self.request.user).order_by('date_to')
+
+
+def categories_add(request):
+    """получение данных из БД и загрузка шаблона categories_add.html"""
+
+    category = Category.objects.all()
+    categories_form = CategoriesForm()
+    return render(request, 'todos/categories_add.html',
+                  {'form': categories_form, 'category': category})
+
+
+def create_category(request):
+    """сохранение категорий в бд"""
+    if request.method == 'POST':
+        category = Category()
+        category.name = request.POST.get('name')
+        category.save()
+        return HttpResponseRedirect('/categories-add/')
+
+
+def delete_category(request, id):
+    """удаление категории из бд"""
+    try:
+        category = Category.objects.get(id=id)
+        category.delete()
+        return HttpResponseRedirect('/categories-add/')
+    except Category.DoesNotExist:
+        return HttpResponseNotFound('<h2>Категория не найдена</h2>')
+
+
+def edit_category(request, id):
+    """редактирование категории в БД"""
+    category = Category.objects.get(id=id)
+    if request.method == "POST":
+        category.name = request.POST.get('name')
+        category.save()
+        return HttpResponseRedirect('/categories-add/')
+    else:
+        return render(request, 'todos/category_edit.html',
+                      {'category': category})
