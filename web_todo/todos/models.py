@@ -58,7 +58,7 @@ class Task(models.Model):
 
     def __str__(self):
         """Возваращает задачу"""
-        return '%s %s' % (self.name, self.completeness)
+        return '%s %s' % (self.name, self.completenes)
 
     def get_absolute_url(self):
         """Возвращает полный URL-адрес для каждой конкретной записи

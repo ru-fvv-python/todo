@@ -36,7 +36,20 @@ urlpatterns += [
     path('accounts/', include('django.contrib.auth.urls')),
 ]
 
+# Добавление URL-адресов для создания, изменения и удаления задач
+urlpatterns += [
+    re_path(r'^task/create$', views.TaskCreate.as_view(),
+            name='task_create'),
+    re_path(r'^task/update/(?P<pk>\d+)$', views.TaskUpdate.as_view(),
+            name='task_update'),
+    re_path(r'^task/delete/(?P<pk>\d+)$', views.TaskDelete.as_view(),
+            name='task_delete'),
+
+]
+
+
+# Добавление URL-адреса для фильтра задач по владельцу
 urlpatterns += [
     re_path(r'^mytasks/$', views.TasksByUserListView.as_view(),
-            name='my-tasks')
+            name='my-tasks',)
 ]

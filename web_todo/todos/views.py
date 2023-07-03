@@ -2,10 +2,32 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.http import HttpResponseRedirect, HttpResponseNotFound
 from django.shortcuts import render
+from django.urls import reverse_lazy
 from django.views import generic
+from django.views.generic import CreateView, UpdateView, DeleteView
 
 from .forms import CategoriesForm
 from .models import Task, Category
+
+
+class TaskCreate(CreateView):
+    """Класс для создания Задачи"""
+    model = Task
+    fields = '__all__'
+    success_url = reverse_lazy('tasks')
+
+
+class TaskUpdate(UpdateView):
+    """Класс для изменения Задачи"""
+    model = Task
+    fields = '__all__'
+    success_url = reverse_lazy('tasks')
+
+
+class TaskDelete(DeleteView):
+    """Класс для удаления Задачи"""
+    model = Task
+    success_url = reverse_lazy('tasks')
 
 
 class TaskListView(generic.ListView):

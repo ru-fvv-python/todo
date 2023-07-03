@@ -9,6 +9,8 @@
       <a href="{{ task.get_absolute_url }}">
         {{ task.name }}</a>
       ({{task.category}})
+      <a href="/task/update/{{task.id}}">Изменить</a> ,
+      <a href="/task/delete/{{task.id}}">Удалить</a>
     </li>
     {% endfor %}
   </ul>

@@ -35,6 +35,7 @@
         <li><a href="{% url 'index' %}">Главная страница</a></li>
         <li><a href="{% url 'categories-add' %}">Редактировать категории</a></li>
         <li><a href="{% url 'tasks' %}">Все задачи</a></li>
+        <li><a href="{% url 'task_create' %}">Добавить задачу</a></li>
 
         {% if user.is_authenticated%}
           <li>Пользователь: {{ user.get_username}} </li>
